@@ -18,7 +18,7 @@ const service = async () => {
     const browser = await puppeteer.launch({
         headless: true,
         args: ['--no-sandbox'],
-        defaultViewport: { width: 1100,  height: 800, deviceScaleFactor: 2 }
+        defaultViewport: { width: 1100,  height: 700, deviceScaleFactor: 2 }
     });
     const page = await browser.newPage()
     await page.setJavaScriptEnabled(false)
