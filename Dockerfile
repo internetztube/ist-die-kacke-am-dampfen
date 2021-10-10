@@ -1,5 +1,3 @@
-
-
 # Use the official lightweight Node.js 14 image.
 # https://hub.docker.com/_/node
 FROM node:14-alpine

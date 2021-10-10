@@ -3,7 +3,6 @@ const app = express()
 const port = process.env.PORT || 3000
 const service = require('./service')
 
-
 app.get('/', async (req, res) => {
     const path = await service()
     console.log(path)
