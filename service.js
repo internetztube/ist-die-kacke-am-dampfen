@@ -9,7 +9,7 @@ const service = async () => {
     const response = await request.text()
 
     const check = response.includes('oon-grid-item-version-4k')
-    if (check) { return null }
+    if (!check) { return null }
 
 
     const path = `${__dirname}/screenshot.jpg`
