@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer')
 const fs = require('fs')
 
-const service = async () => {
+const main = async () => {
     const url = 'https://orf.at/'
 
     const { default: fetch } = await import('node-fetch')
@@ -27,4 +27,4 @@ const service = async () => {
     return path
 }
 
-module.exports = service
+module.exports = main
