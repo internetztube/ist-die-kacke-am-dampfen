@@ -7,7 +7,7 @@ const twitterService = require('./services/twitter')
 app.get('/', async (req, res) => {
     const path = await service()
     if (!path) {
-        return res.send('Die Kacke ist derzeit nicht am Dampfen.')
+        return res.send('dampft-nicht')
     }
     const response = await twitterService.tweetImage({ filePath: path, message: '#EsDampft' })
     return res.send(response)

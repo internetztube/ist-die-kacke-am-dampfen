@@ -31,7 +31,7 @@ const tweetImage = async ({ filePath, message }) => {
 
     // Die Kacke war heute schon am dampfen. Genug ist genug.
     if (tweetDate === nowDate) {
-        return 'Die Kacke war heute schon am dampfen. Genug ist genug.'
+        return 'genug-ist-genug.'
     }
     const mediaId = await client.v1.uploadMedia(filePath)
     return await client.v1.tweet(message, {
